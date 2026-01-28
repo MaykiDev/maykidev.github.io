@@ -28,6 +28,10 @@
   scroll-margin-top: 80px; /* A altura do seu menu fixo */
 }
 
+#sobre3 {
+  scroll-margin-top: 80px;
+}
+
 /* ------ RESET/BASE ------ */
 *,
 *::before,
