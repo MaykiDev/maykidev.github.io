@@ -1807,32 +1807,38 @@ body.modal-open{
   border-radius: 16px;
 }
 
-/* ===== FIX SCROLL MODAL (compatível Hostinger) ===== */
+/* ===== FIX SCROLL MODAL ===== */
 
+/* 1) o dialog vira um container com altura definida */
 .speaker-modal__dialog{
   display: flex;
   flex-direction: column;
 
-  /* altura do modal (compatível) */
-  height: calc(100vh - 28px);
+  /* use dvh (melhor no mobile) + fallback */
   max-height: calc(100vh - 28px);
+  max-height: calc(100dvh - 28px);
+
+  /* opcional mas ajuda a “travar” em desktops */
+  height: min(720px, calc(100dvh - 28px));
 }
 
+/* 2) o conteúdo precisa ocupar a altura do dialog */
 .speaker-modal__content{
   flex: 1;
-  min-height: 0; /* ESSENCIAL p/ scroll funcionar */
+  min-height: 0; /* ESSENCIAL p/ overflow funcionar em grid/flex */
 }
 
+/* 3) permita que colunas/linhas do grid encolham */
 .speaker-modal__media{
   min-height: 0;
 }
 
 .speaker-modal__body{
-  min-height: 0;
+  min-height: 0;  /* ESSENCIAL */
   overflow: auto; /* rolagem dentro do texto */
 }
 
+/* 4) a imagem não pode “forçar” altura demais */
 .speaker-modal__media img{
   max-height: 100%;
 }
-
