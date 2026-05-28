@@ -2,11 +2,16 @@
    VARIÁVEIS E CONFIGURAÇÕES GERAIS
    ========================================================================== */
 :root {
-    --primary-bg: #00263a;     /* Azul Escuro (Fundo e Títulos) */
-    --accent-yellow: #fbaf19;  /* Amarelo Principal */
-    --btn-grad-start: #dea939; /* Amarelo Gradiente */
-    --white-text: #e7e8e9;     /* Branco */
-    --grey-text: #d1d2d4;      /* Cinza */
+    --primary-bg: #00263a;
+    /* Azul Escuro (Fundo e Títulos) */
+    --accent-yellow: #fbaf19;
+    /* Amarelo Principal */
+    --btn-grad-start: #dea939;
+    /* Amarelo Gradiente */
+    --white-text: #e7e8e9;
+    /* Branco */
+    --grey-text: #d1d2d4;
+    /* Cinza */
     --font-main: 'Montserrat', sans-serif;
 }
 
@@ -47,7 +52,8 @@ header {
 }
 
 .logo-img {
-    height: 60px; /* Ajuste conforme o tamanho da sua logo PNG */
+    height: 60px;
+    /* Ajuste conforme o tamanho da sua logo PNG */
     width: auto;
 }
 
@@ -104,26 +110,32 @@ header {
    HERO SECTION (CONTEÚDO PRINCIPAL)
    ========================================================================== */
 .hero {
-    height: auto; /* Deixa de ser tela cheia */
-    min-height: 600px; /* Altura mínima para o conteúdo */
+    height: auto;
+    /* Deixa de ser tela cheia */
+    min-height: 600px;
+    /* Altura mínima para o conteúdo */
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 10px 0; /* Espaço entre o menu e o bloco da imagem */
+    padding: 10px 0;
+    /* Espaço entre o menu e o bloco da imagem */
 }
 
 .hero .container {
     width: 95%;
     max-width: 1400px;
-    height: 600px; /* Altura fixa do bloco da imagem */
+    height: 600px;
+    /* Altura fixa do bloco da imagem */
     margin: 0 auto;
     background: linear-gradient(to right, rgba(0, 38, 58, 0.8) 20%, rgba(0, 38, 58, 0.2) 100%), url('assent/ginagio.png');
     background-size: cover;
     background-position: center;
-    border-radius: 40px; /* Bordas arredondadas conforme o layout */
+    border-radius: 40px;
+    /* Bordas arredondadas conforme o layout */
     display: flex;
     align-items: center;
-    padding: 0 5%; /* Padding interno para o texto não encostar na borda */
+    padding: 0 5%;
+    /* Padding interno para o texto não encostar na borda */
     overflow: hidden;
 }
 
@@ -355,7 +367,8 @@ header {
 }
 
 .card-icon {
-    background-color: #d1d2d4; /* Cinza claro para a área do ícone */
+    background-color: #d1d2d4;
+    /* Cinza claro para a área do ícone */
     padding: 25px;
     display: flex;
     align-items: center;
@@ -394,7 +407,8 @@ header {
 
 .carousel-container {
     background-color: var(--white-text);
-    border-radius: 40px; /* Bordas bem arredondadas conforme o layout */
+    border-radius: 40px;
+    /* Bordas bem arredondadas conforme o layout */
     padding: 50px;
     color: var(--primary-bg);
 }
@@ -422,7 +436,8 @@ header {
 
 /* Trilho e Cards */
 .carousel-track-container {
-    overflow: hidden; /* Esconde o que sobra */
+    overflow: hidden;
+    /* Esconde o que sobra */
     position: relative;
     margin-bottom: 30px;
 }
@@ -435,7 +450,8 @@ header {
 }
 
 .tournament-card {
-    min-width: calc(25% - 15px); /* 4 cards no desktop */
+    min-width: calc(25% - 15px);
+    /* 4 cards no desktop */
     height: 400px;
     border-radius: 25px;
     overflow: hidden;
@@ -545,7 +561,8 @@ header {
 .nav-btn:hover {
     background-color: var(--primary-bg);
     color: var(--white-text);
-    transform: scale(1.1); /* Dá um leve destaque */
+    transform: scale(1.1);
+    /* Dá um leve destaque */
 }
 
 /* Efeito visual ao clicar */
@@ -563,7 +580,8 @@ header {
 
 .package-grid {
     display: grid;
-    grid-template-columns: 1.2fr 1fr 1fr; /* O primeiro é levemente maior */
+    grid-template-columns: 1.2fr 1fr 1fr;
+    /* O primeiro é levemente maior */
     gap: 20px;
     align-items: stretch;
 }
@@ -632,7 +650,8 @@ header {
 
 .sport-icon-top img {
     width: 100%;
-    filter: brightness(0) invert(1); /* Deixa o ícone branco se for preto */
+    filter: brightness(0) invert(1);
+    /* Deixa o ícone branco se for preto */
 }
 
 .sport-tag {
@@ -641,14 +660,16 @@ header {
     font-weight: 900;
     padding: 8px 20px;
     position: absolute;
-    top: 100px; /* Ajuste conforme necessário */
+    top: 100px;
+    /* Ajuste conforme necessário */
     left: 0;
     font-size: 18px;
 }
 
 .sport-content {
     background: linear-gradient(transparent, rgba(0, 38, 58, 0.9));
-    margin: -30px; /* Compensa o padding do card pai */
+    margin: -30px;
+    /* Compensa o padding do card pai */
     padding: 40px 30px 30px;
 }
 
@@ -669,13 +690,15 @@ header {
 
 .about-flex {
     display: flex;
-    align-items: center; /* Centraliza verticalmente o texto com a imagem */
+    align-items: center;
+    /* Centraliza verticalmente o texto com a imagem */
     gap: 50px;
 }
 
 /* Lado do Texto */
 .about-text-side {
-    flex: 1; /* Ocupa metade do espaço */
+    flex: 1;
+    /* Ocupa metade do espaço */
 }
 
 .about-title {
@@ -695,11 +718,13 @@ header {
     line-height: 1.5;
     color: var(--white-text);
     margin-bottom: 30px;
-    max-width: 500px; /* Evita que o texto fique muito largo */
+    max-width: 500px;
+    /* Evita que o texto fique muito largo */
 }
 
 .about-mini-logo img {
-    max-width: 120px; /* Ajuste conforme o tamanho da sua logo */
+    max-width: 120px;
+    /* Ajuste conforme o tamanho da sua logo */
     height: auto;
 }
 
@@ -713,11 +738,15 @@ header {
 /* Container que faz o papel da borda branca */
 .image-container-frame {
     width: 100%;
-    max-width: 550px; /* Ajuste conforme o layout */
+    max-width: 550px;
+    /* Ajuste conforme o layout */
     height: 450px;
-    background-color: #fff; /* A borda branca */
-    padding: 15px; /* Grossura da borda branca */
-    border-radius: 40px; /* Arredondamento externo */
+    background-color: #fff;
+    /* A borda branca */
+    padding: 15px;
+    /* Grossura da borda branca */
+    border-radius: 40px;
+    /* Arredondamento externo */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -728,15 +757,20 @@ header {
 .about-img-frame {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Faz a imagem preencher o espaço sem esticar */
-    border-radius: 25px; /* Arredondamento interno para acompanhar o quadro */
+    object-fit: cover;
+    /* Faz a imagem preencher o espaço sem esticar */
+    border-radius: 25px;
+    /* Arredondamento interno para acompanhar o quadro */
 }
 
 .placeholder-image {
     width: 100%;
-    height: 450px; /* Altura sugerida */
-    background-color: #fff; /* Fundo branco solicitado */
-    border-radius: 20px; /* Combina com o estilo dos outros cards */
+    height: 450px;
+    /* Altura sugerida */
+    background-color: #fff;
+    /* Fundo branco solicitado */
+    border-radius: 20px;
+    /* Combina com o estilo dos outros cards */
 }
 
 /* ==========================================================================
@@ -744,11 +778,13 @@ header {
    ========================================================================== */
 .partners {
     padding: 60px 0;
-    background-color: var(--primary-bg); /* Mantém o fundo azul escuro da página */
+    background-color: var(--primary-bg);
+    /* Mantém o fundo azul escuro da página */
 }
 
 .partners-container {
-    background-color: var(--white-text); /* Fundo branco do contêiner */
+    background-color: var(--white-text);
+    /* Fundo branco do contêiner */
     border-radius: 40px;
     padding: 50px;
     text-align: left;
@@ -793,7 +829,7 @@ header {
 }
 
 /* Ajuste para a última linha não ficar "esticada" e manter o alinhamento central */
-.partners-grid > :nth-child(n+13) {
+.partners-grid> :nth-child(n+13) {
     grid-column: span 1;
 }
 
@@ -877,7 +913,8 @@ header {
 }
 
 .footer-title {
-    color: var(--accent-yellow); /* #fbaf19 */
+    color: var(--accent-yellow);
+    /* #fbaf19 */
     font-size: 38px;
     font-weight: 900;
     margin-bottom: 25px;
@@ -925,7 +962,7 @@ header {
     width: 100%;
 }
 
-.contact-form input, 
+.contact-form input,
 .contact-form textarea {
     width: 100%;
     padding: 15px 20px;
@@ -939,7 +976,7 @@ header {
     display: block;
 }
 
-.contact-form input::placeholder, 
+.contact-form input::placeholder,
 .contact-form textarea::placeholder {
     color: rgba(231, 232, 233, 0.5);
 }
@@ -1001,7 +1038,8 @@ header {
    ========================================================================== */
 @media (max-width: 1100px) {
     .tournament-card {
-        min-width: calc(50% - 10px); /* 2 cards em tablets */
+        min-width: calc(50% - 10px);
+        /* 2 cards em tablets */
     }
 }
 
@@ -1016,7 +1054,7 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transition: 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+        transition: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
         z-index: 999;
     }
 
@@ -1074,14 +1112,16 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 20px; /* Espaçamento entre os links e os ícones */
+        gap: 20px;
+        /* Espaçamento entre os links e os ícones */
     }
 
     /* Mostrar os ícones quando o menu abrir */
     .social-icons-mobile {
         display: flex;
         gap: 15px;
-        margin-top: 30px; /* Dá um espaço entre o último link e as redes sociais */
+        margin-top: 30px;
+        /* Dá um espaço entre o último link e as redes sociais */
     }
 
     /* Garante que os botões sociais no menu mobile sigam o mesmo estilo */
@@ -1099,21 +1139,22 @@ header {
     }
 
     /* Esconde os ícones que estão "soltos" na barra lá em cima para não poluir */
-    .navbar > .social-icons {
+    .navbar>.social-icons {
         display: none;
     }
 
     .package-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .info-card-white {
         text-align: center;
         align-items: center;
     }
 
     .partners-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 por linha em tablets */
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 por linha em tablets */
     }
 }
 
@@ -1136,13 +1177,14 @@ header {
     .image-container-frame {
         height: 350px;
         max-width: 100%;
-    }   
+    }
 
     .placeholder-image {
         height: 300px;
     }
 
-    .benefit-row, .benefit-row.reverse {
+    .benefit-row,
+    .benefit-row.reverse {
         flex-direction: column;
         text-align: center;
     }
@@ -1169,14 +1211,18 @@ header {
         text-align: center;
     }
 
-    .footer-contact, .footer-form-side {
+    .footer-contact,
+    .footer-form-side {
         width: 100%;
-        max-width: 380px; /* Limita a largura máxima para não ficar gigante em tablets */
-        margin: 0 auto;  /* Centraliza o bloco na tela */
+        max-width: 380px;
+        /* Limita a largura máxima para não ficar gigante em tablets */
+        margin: 0 auto;
+        /* Centraliza o bloco na tela */
     }
 
     .contact-form {
-        align-items: center; /* Centraliza os itens do formulário no mobile */
+        align-items: center;
+        /* Centraliza os itens do formulário no mobile */
     }
 
     .footer-text {
@@ -1217,21 +1263,23 @@ header {
     }
 
     .social-icons {
-        display: none; /* Esconde ícones no header no mobile para não poluir */
+        display: none;
+        /* Esconde ícones no header no mobile para não poluir */
     }
 
     .carousel-header {
         flex-direction: column;
         text-align: left;
     }
-    
+
     .carousel-subtitle {
         text-align: left;
         margin-top: 15px;
     }
 
     .tournament-card {
-        min-width: 85%; /* No mobile, mostra quase 1 card inteiro */
+        min-width: 85%;
+        /* No mobile, mostra quase 1 card inteiro */
     }
 
     .carousel-container {
@@ -1243,15 +1291,17 @@ header {
         font-size: 28px;
     }
 
-    .benefit-row, 
+    .benefit-row,
     .benefit-row.reverse {
-        flex-direction: column; /* Empilha texto e imagem */
+        flex-direction: column;
+        /* Empilha texto e imagem */
         gap: 20px;
         text-align: center;
     }
 
     .benefits-white-box {
-        padding: 20px; /* Reduz o respiro lateral no celular */
+        padding: 20px;
+        /* Reduz o respiro lateral no celular */
     }
 
     .benefit-image {
@@ -1259,7 +1309,8 @@ header {
     }
 
     .img-placeholder {
-        height: 200px; /* Diminui a altura da imagem no celular */
+        height: 200px;
+        /* Diminui a altura da imagem no celular */
     }
 }
 
@@ -1274,7 +1325,8 @@ header {
     }
 
     .stat-item {
-        flex: 1 1 40%; /* Dois por linha no mobile pequeno */
+        flex: 1 1 40%;
+        /* Dois por linha no mobile pequeno */
     }
 
     .info-card {
@@ -1293,12 +1345,13 @@ header {
     .partners-container {
         padding: 30px 20px;
     }
-    
+
     .partners-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 por linha no mobile */
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 por linha no mobile */
         gap: 30px 15px;
     }
-    
+
     .partners-title {
         font-size: 24px;
         margin-bottom: 25px;
@@ -1313,6 +1366,7 @@ header {
         opacity: 0;
         transform: translateX(-50px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);

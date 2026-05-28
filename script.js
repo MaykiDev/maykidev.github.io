@@ -27,7 +27,7 @@ function updateCarousel() {
 nextBtn.addEventListener('click', () => {
     const totalCards = document.querySelectorAll('.tournament-card').length;
     const cardsVisible = window.innerWidth > 1100 ? 4 : (window.innerWidth > 768 ? 2 : 1);
-    
+
     if (index < totalCards - cardsVisible) {
         index++;
     } else {
