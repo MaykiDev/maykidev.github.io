@@ -13,6 +13,25 @@ document.querySelectorAll(".nav-menu li a").forEach(n => n.addEventListener("cli
     navMenu.classList.remove("active");
 }));
 
+// Scroll suave para o topo ao clicar em HOME
+document.querySelector('.nav-menu a[href="#home"]').addEventListener('click', function (e) {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+// Header compacto ao rolar a página
+window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
 const track = document.querySelector('#carouselTrack');
 const nextBtn = document.querySelector('#nextBtn');
 const prevBtn = document.querySelector('#prevBtn');
@@ -27,7 +46,7 @@ function updateCarousel() {
 nextBtn.addEventListener('click', () => {
     const totalCards = document.querySelectorAll('.tournament-card').length;
     const cardsVisible = window.innerWidth > 1100 ? 4 : (window.innerWidth > 768 ? 2 : 1);
-    
+
     if (index < totalCards - cardsVisible) {
         index++;
     } else {
