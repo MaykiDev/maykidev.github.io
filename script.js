@@ -168,3 +168,51 @@ const animateOnScroll = () => {
 
 // Inicia animações quando o DOM estiver pronto
 animateOnScroll();
+
+// ============================================================
+// FORMULÁRIO DE CONTATO (WHATSAPP REDIRECT)
+// ============================================================
+const whatsappForm = document.getElementById('whatsappForm');
+if (whatsappForm) {
+    whatsappForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const nome = document.getElementById('formName').value;
+        const email = document.getElementById('formEmail').value;
+        const telefone = document.getElementById('formPhone').value;
+        const modalidade = document.getElementById('formModality').value;
+        const torneio = document.getElementById('formTournament').value;
+        const atletas = document.getElementById('formAthletes').value;
+        const mensagem = document.getElementById('formMessage').value;
+
+        let textoWhatsApp = `Olá, vim pelo site e gostaria de mais informações!\n\n`;
+        textoWhatsApp += `*Nome:* ${nome}\n`;
+        textoWhatsApp += `*E-mail:* ${email}\n`;
+        textoWhatsApp += `*Telefone:* ${telefone}\n`;
+        textoWhatsApp += `*Modalidade:* ${modalidade}\n`;
+        textoWhatsApp += `*Torneio:* ${torneio}\n`;
+        if (atletas) textoWhatsApp += `*Nº de Atletas:* ${atletas}\n`;
+        if (mensagem) textoWhatsApp += `*Mensagem:* ${mensagem}\n`;
+
+        const numeroWhatsApp = "551126797709"; // Número da Sportz
+        const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(textoWhatsApp)}`;
+        
+        window.open(url, '_blank');
+    });
+}
+
+// ============================================================
+// FAQ ACCORDION LOGIC
+// ============================================================
+const faqQuestions = document.querySelectorAll('.faq-question');
+faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+        question.classList.toggle('active');
+        const answer = question.nextElementSibling;
+        if (question.classList.contains('active')) {
+            answer.style.maxHeight = answer.scrollHeight + "px";
+        } else {
+            answer.style.maxHeight = null;
+        }
+    });
+});

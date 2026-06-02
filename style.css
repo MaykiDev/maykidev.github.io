@@ -580,8 +580,7 @@ body {
 
 .package-grid {
     display: grid;
-    grid-template-columns: 1.2fr 1fr 1fr;
-    /* O primeiro é levemente maior */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     align-items: stretch;
 }
@@ -1323,7 +1322,8 @@ body {
 }
 
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea,
+.contact-form select {
     width: 100%;
     padding: 15px 20px;
     background: transparent;
@@ -1334,6 +1334,10 @@ body {
     font-size: 14px;
     font-weight: 600;
     display: block;
+}
+
+.contact-form select option {
+    color: #000;
 }
 
 .contact-form input::placeholder,
@@ -1391,6 +1395,131 @@ body {
     color: var(--grey-text);
     font-size: 11px;
     text-align: center;
+}
+
+/* ==========================================================================
+   DEPOIMENTOS
+   ========================================================================== */
+.testimonials {
+    padding: 60px 0;
+    background-color: var(--white-text);
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.testimonial-card {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid var(--accent-yellow);
+}
+
+.testimonial-text {
+    font-size: 16px;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.testimonial-author strong {
+    display: block;
+    color: var(--primary-bg);
+    font-size: 18px;
+}
+
+.testimonial-author span {
+    font-size: 14px;
+    color: #888;
+}
+
+/* ==========================================================================
+   FAQ (DÚVIDAS FREQUENTES)
+   ========================================================================== */
+.faq-section {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 40px auto 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-bg);
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question::after {
+    content: '+';
+    font-size: 24px;
+    color: var(--accent-yellow);
+    transition: transform 0.3s;
+}
+
+.faq-question.active::after {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.faq-answer p {
+    padding: 0 20px 20px;
+    color: #555;
+}
+
+/* ==========================================================================
+   WHATSAPP FLOAT
+   ========================================================================== */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    z-index: 9999;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
 }
 
 /* ==========================================================================
@@ -1600,6 +1729,10 @@ body {
     .contact-form button {
         align-self: center;
         width: 100%;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
     }
 }
 
