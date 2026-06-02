@@ -212,19 +212,6 @@ body {
     box-shadow: 0 10px 20px rgba(251, 175, 25, 0.4);
 }
 
-/* Efeito de Brilho no Hover */
-.btn-primary::after {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -100%;
-    width: 50%;
-    height: 200%;
-    background: rgba(255, 255, 255, 0.3);
-    transform: rotate(30deg);
-    transition: all 0.6s ease;
-}
-
 .btn-primary:hover::after {
     left: 150%;
 }
