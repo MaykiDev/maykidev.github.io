@@ -7,7 +7,7 @@
     <title>Sportz - Torneios de Base</title>
     <meta name="description" content="A Sportz é a única que leva você e sua equipe para os maiores torneios de base do mundo. Viagens esportivas inesquecíveis.">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
@@ -16,7 +16,7 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img src="assent/logo_sporz_branca.png" alt="Sportz Logo" class="logo-img">
+                <img src="assets/logos/logo-sportz-branca.png" alt="Sportz Logo" class="logo-img">
             </div>
 
             <ul class="nav-menu">
@@ -53,7 +53,7 @@
     <main class="hero">
         <div class="container">
             <div class="hero-content">
-                <img src="assent/logo_sporz_branca.png" alt="Sportz" class="hero-logo">
+                <img src="assets/logos/logo-sportz-branca.png" alt="Sportz" class="hero-logo">
 
                 <p class="hero-text">
                     A SPORTZ É A ÚNICA QUE LEVA VOCÊ E SUA EQUIPE PARA OS MAIORES TORNEIOS DE BASE DO MUNDO!
@@ -68,47 +68,35 @@
     </main>
 
     <section class="about">
-        <div class="container about-grid">
+        <div class="container">
 
-            <div class="about-content">
-                <h2 class="section-title">
-                    A SPORTZ É UMA EMPRESA DE VIAGENS ESPORTIVAS QUE PROPORCIONA MOMENTOS INESQUECÍVEIS PARA SEUS
-                    ATLETAS.
-                </h2>
-                <p class="section-desc">
-                    Esporte é sinônimo de vida, saúde e crescimento pessoal. Viajar para praticar esporte é uma vivência
-                    sem igual que você carregará para o resto da vida.
-                </p>
+            <div class="about-top">
+                <div class="about-content">
+                    <span class="about-eyebrow">QUEM É A SPORTZ</span>
+                    <h2 class="section-title">
+                        A SPORTZ É UMA EMPRESA DE VIAGENS ESPORTIVAS QUE PROPORCIONA MOMENTOS INESQUECÍVEIS PARA SEUS
+                        ATLETAS.
+                    </h2>
+                    <p class="section-desc">
+                        Esporte é sinônimo de vida, saúde e crescimento pessoal. Viajar para praticar esporte é uma vivência
+                        sem igual que você carregará para o resto da vida.
+                    </p>
+                </div>
 
-                <div class="stats-container">
+                <div class="stats-side">
                     <div class="stat-item">
-                        <div class="stat-icon">
-                            <img src="assent/1.png" alt="Clientes">
-                        </div>
-                        <div class="stat-info">
-                            <strong>12 MIL</strong>
-                            <span>CLIENTES SATISFEITOS</span>
-                        </div>
+                        <strong>12 MIL</strong>
+                        <span>CLIENTES SATISFEITOS</span>
                     </div>
 
                     <div class="stat-item">
-                        <div class="stat-icon">
-                            <img src="assent/2.png" alt="Desde 1983">
-                        </div>
-                        <div class="stat-info">
-                            <strong>DESDE 1983</strong>
-                            <span>PROPORCIONANDO VIAGENS INESQUECÍVEIS</span>
-                        </div>
+                        <strong>DESDE 1983</strong>
+                        <span>PROPORCIONANDO VIAGENS INESQUECÍVEIS</span>
                     </div>
 
                     <div class="stat-item">
-                        <div class="stat-icon">
-                            <img src="assent/3.png" alt="Viagens">
-                        </div>
-                        <div class="stat-info">
-                            <strong>2.000+</strong>
-                            <span>VIAGENS REALIZADAS</span>
-                        </div>
+                        <strong>2.000+</strong>
+                        <span>VIAGENS REALIZADAS</span>
                     </div>
                 </div>
             </div>
@@ -117,7 +105,7 @@
 
                 <div class="info-card">
                     <div class="card-icon">
-                        <img src="assent/4.png" alt="Viver o Esporte">
+                        <img src="assets/icons/icon-viver-esporte.png" alt="Viver o Esporte">
                     </div>
                     <div class="card-text">
                         <h3>VIVER O ESPORTE</h3>
@@ -128,7 +116,7 @@
 
                 <div class="info-card">
                     <div class="card-icon">
-                        <img src="assent/5.png" alt="Cultura">
+                        <img src="assets/icons/icon-cultura.png" alt="Cultura">
                     </div>
                     <div class="card-text">
                         <h3>CONHECER NOVAS CULTURAS</h3>
@@ -139,7 +127,7 @@
 
                 <div class="info-card">
                     <div class="card-icon">
-                        <img src="assent/6.png" alt="Time">
+                        <img src="assets/icons/icon-time.png" alt="Time">
                     </div>
                     <div class="card-text">
                         <h3>SER PARTE DE UM TIME</h3>
@@ -164,32 +152,32 @@
 
                 <div class="carousel-track-container">
                     <ul class="carousel-track" id="carouselTrack">
-                        <li class="tournament-card" onclick="window.location.href='torneio-gothia-cup.html'" style="cursor: pointer;">
-                            <img src="assent/foto_1.png" alt="Gothia Cup">
+                        <li class="tournament-card" onclick="window.location.href='pages/torneios/gothia-cup.html'" style="cursor: pointer;">
+                            <img src="assets/photos/foto-1.png" alt="Gothia Cup">
                             <div class="card-overlay">
                                 <h3>GOTHIA CUP</h3>
                                 <span>FUTEBOL</span>
                                 <p><i class="fas fa-map-marker-alt"></i> GOTEMBURGO - SUÉCIA</p>
                             </div>
                         </li>
-                        <li class="tournament-card" onclick="window.location.href='torneio-helsinki-cup.html'" style="cursor: pointer;">
-                            <img src="assent/foto_2.png" alt="Helsinki Cup">
+                        <li class="tournament-card" onclick="window.location.href='pages/torneios/helsinki-cup.html'" style="cursor: pointer;">
+                            <img src="assets/photos/foto-2.png" alt="Helsinki Cup">
                             <div class="card-overlay">
                                 <h3>HELSINKI CUP</h3>
                                 <span>FUTEBOL</span>
                                 <p><i class="fas fa-map-marker-alt"></i> HELSINKI - FINLÂNDIA</p>
                             </div>
                         </li>
-                        <li class="tournament-card" onclick="window.location.href='torneio-partille-world-cup.html'" style="cursor: pointer;">
-                            <img src="assent/foto_3.png" alt="Partille World Cup">
+                        <li class="tournament-card" onclick="window.location.href='pages/torneios/partille-world-cup.html'" style="cursor: pointer;">
+                            <img src="assets/photos/foto-3.png" alt="Partille World Cup">
                             <div class="card-overlay">
                                 <h3>PARTILLE WORLD CUP</h3>
                                 <span>HANDEBOL</span>
                                 <p><i class="fas fa-map-marker-alt"></i> GOTEMBURGO - SUÉCIA</p>
                             </div>
                         </li>
-                        <li class="tournament-card" onclick="window.location.href='torneio-granollers-cup.html'" style="cursor: pointer;">
-                            <img src="assent/foto_4.png" alt="Granollers Cup">
+                        <li class="tournament-card" onclick="window.location.href='pages/torneios/granollers-cup.html'" style="cursor: pointer;">
+                            <img src="assets/photos/foto-4.png" alt="Granollers Cup">
                             <div class="card-overlay">
                                 <h3>GRANOLLERS CUP</h3>
                                 <span>HANDEBOL</span>
@@ -215,14 +203,16 @@
         <div class="container package-grid">
 
             <div class="package-card info-card-white">
-                <h2 class="package-title">CONHEÇA NOSSOS PACOTES</h2>
-                <p class="package-text">CONHEÇA NOSSOS PACOTES OU SOLICITE UMA OFERTA PERSONALIZADA.</p>
+                <div class="package-info">
+                    <h2 class="package-title">CONHEÇA NOSSOS PACOTES</h2>
+                    <p class="package-text">CONHEÇA NOSSOS PACOTES OU SOLICITE UMA OFERTA PERSONALIZADA.</p>
+                </div>
                 <a href="https://wa.me/551126797709" target="_blank" class="btn-package-outline">SOLICITAR OFERTA</a>
             </div>
 
-            <div class="package-card sport-card" style="background-image: url('assent/foto_6.png');">
+            <div class="package-card sport-card" style="background-image: url('assets/photos/foto-6.png');">
                 <div class="sport-icon-top">
-                    <img src="assent/8.png" alt="Futebol">
+                    <img src="assets/icons/icon-8.png" alt="Futebol">
                 </div>
                 <div class="sport-tag">FUTEBOL</div>
                 <div class="sport-content">
@@ -238,9 +228,9 @@
                 </div>
             </div>
 
-            <div class="package-card sport-card" style="background-image: url('assent/foto_5.png');">
+            <div class="package-card sport-card" style="background-image: url('assets/photos/foto-5.png');">
                 <div class="sport-icon-top">
-                    <img src="assent/7.png" alt="Handebol">
+                    <img src="assets/icons/icon-handebol.png" alt="Handebol">
                 </div>
                 <div class="sport-tag">HANDEBOL</div>
                 <div class="sport-content">
@@ -255,7 +245,7 @@
                 </div>
             </div>
 
-            <div class="package-card sport-card" style="background-image: url('assent/foto_7.png');">
+            <div class="package-card sport-card" style="background-image: url('assets/photos/foto-7.png');">
                 <div class="sport-icon-top">
                     <i class="fas fa-basketball-ball" style="font-size: 40px; color: #fff;"></i>
                 </div>
@@ -268,7 +258,7 @@
                 </div>
             </div>
 
-            <div class="package-card sport-card" style="background-image: url('assent/foto_8.png');">
+            <div class="package-card sport-card" style="background-image: url('assets/photos/foto-8.png');">
                 <div class="sport-icon-top">
                     <i class="fas fa-volleyball-ball" style="font-size: 40px; color: #fff;"></i>
                 </div>
@@ -282,7 +272,7 @@
                 </div>
             </div>
 
-            <div class="package-card sport-card" style="background-image: url('assent/foto_9.png');">
+            <div class="package-card sport-card" style="background-image: url('assets/photos/foto-9.png');">
                 <div class="sport-icon-top">
                     <i class="fas fa-swimmer" style="font-size: 40px; color: #fff;"></i>
                 </div>
@@ -310,55 +300,55 @@
 
                 <div class="gallery-grid">
                     <div class="gallery-item gallery-item-large">
-                        <img src="assent/foto_1.png" alt="Sportz Galeria 1">
+                        <img src="assets/photos/foto-1.png" alt="Sportz Galeria 1">
                         <div class="gallery-overlay">
                             <i class="fas fa-search-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-item">
-                        <img src="assent/foto_2.png" alt="Sportz Galeria 2">
+                        <img src="assets/photos/foto-2.png" alt="Sportz Galeria 2">
                         <div class="gallery-overlay">
                             <i class="fas fa-search-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-item">
-                        <img src="assent/foto_3.png" alt="Sportz Galeria 3">
+                        <img src="assets/photos/foto-3.png" alt="Sportz Galeria 3">
                         <div class="gallery-overlay">
                             <i class="fas fa-search-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-item">
-                        <img src="assent/foto_4.png" alt="Sportz Galeria 4">
+                        <img src="assets/photos/foto-4.png" alt="Sportz Galeria 4">
                         <div class="gallery-overlay">
                             <i class="fas fa-search-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-item gallery-item-large">
-                        <img src="assent/foto_5.png" alt="Sportz Galeria 5">
+                        <img src="assets/photos/foto-5.png" alt="Sportz Galeria 5">
                         <div class="gallery-overlay">
                             <i class="fas fa-search-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-item">
-                        <img src="assent/foto_6.png" alt="Sportz Galeria 6">
+                        <img src="assets/photos/foto-6.png" alt="Sportz Galeria 6">
                         <div class="gallery-overlay">
                             <i class="fas fa-search-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-item">
-                        <img src="assent/foto_7.png" alt="Sportz Galeria 7">
+                        <img src="assets/photos/foto-7.png" alt="Sportz Galeria 7">
                         <div class="gallery-overlay">
                             <i class="fas fa-search-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-item">
-                        <img src="assent/foto_8.png" alt="Sportz Galeria 8">
+                        <img src="assets/photos/foto-8.png" alt="Sportz Galeria 8">
                         <div class="gallery-overlay">
                             <i class="fas fa-search-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-item">
-                        <img src="assent/foto_9.png" alt="Sportz Galeria 9">
+                        <img src="assets/photos/foto-9.png" alt="Sportz Galeria 9">
                         <div class="gallery-overlay">
                             <i class="fas fa-search-plus"></i>
                         </div>
@@ -389,13 +379,13 @@
                 </p>
 
                 <div class="about-mini-logo">
-                    <img src="assent/logo_sporz_branca.png" alt="Logo Sportz">
+                    <img src="assets/logos/logo-sportz-branca.png" alt="Logo Sportz">
                 </div>
             </div>
 
             <div class="about-image-side">
                 <div class="image-container-frame">
-                    <img src="assent/foto_7.png" alt="40 Anos de Gothia Cup" class="about-img-frame">
+                    <img src="assets/photos/foto-7.png" alt="40 Anos de Gothia Cup" class="about-img-frame">
                 </div>
             </div>
 
@@ -408,16 +398,16 @@
                 <h2 class="partners-title">PARCEIROS</h2>
 
                 <div class="partners-grid">
-                    <div class="partner-logo"><img src="assent/9.png" alt="Barça Academy"></div>
-                    <div class="partner-logo"><img src="assent/10.png" alt="Copa Floripa"></div>
-                    <div class="partner-logo"><img src="assent/11.png" alt="CBF Camp"></div>
-                    <div class="partner-logo"><img src="assent/12.png" alt="Dana Cup"></div>
-                    <div class="partner-logo"><img src="assent/13.png" alt="Gothia Cup"></div>
-                    <div class="partner-logo"><img src="assent/14.png" alt="Mayor's Cup"></div>
+                    <div class="partner-logo"><img src="assets/icons/icon-9.png" alt="Barça Academy"></div>
+                    <div class="partner-logo"><img src="assets/icons/icon-10.png" alt="Copa Floripa"></div>
+                    <div class="partner-logo"><img src="assets/icons/icon-11.png" alt="CBF Camp"></div>
+                    <div class="partner-logo"><img src="assets/icons/icon-12.png" alt="Dana Cup"></div>
+                    <div class="partner-logo"><img src="assets/icons/icon-13.png" alt="Gothia Cup"></div>
+                    <div class="partner-logo"><img src="assets/icons/icon-14.png" alt="Mayor's Cup"></div>
 
-                    <div class="partner-logo"><img src="assent/15.png" alt="Manchester City"></div>
-                    <div class="partner-logo"><img src="assent/16.png" alt="Paris World Games"></div>
-                    <div class="partner-logo"><img src="assent/17.png" alt="USA Cup"></div>
+                    <div class="partner-logo"><img src="assets/icons/icon-15.png" alt="Manchester City"></div>
+                    <div class="partner-logo"><img src="assets/icons/icon-16.png" alt="Paris World Games"></div>
+                    <div class="partner-logo"><img src="assets/icons/icon-17.png" alt="USA Cup"></div>
                 </div>
             </div>
         </div>
@@ -471,7 +461,7 @@
 
                     <div class="manager-image">
                         <div class="manager-img-frame">
-                            <img src="assent/foto_9.png" alt="Manager Sportz">
+                            <img src="assets/photos/foto-9.png" alt="Manager Sportz">
                         </div>
                         <div class="manager-cta">
                             <h3>QUER SER UM MANAGER SPORTZ?</h3>
@@ -506,7 +496,7 @@
                         <a href="#contato" class="btn btn-primary">FALE COM A SPORTZ</a>
                     </div>
                     <div class="benefit-image">
-                        <div class="img-placeholder" style="background-image: url('assent/foto_8.png');"></div>
+                        <div class="img-placeholder" style="background-image: url('assets/photos/foto-8.png');"></div>
                     </div>
                 </div>
 
@@ -527,7 +517,7 @@
                         <a href="#contato" class="btn btn-primary">QUERO SER MANAGER</a>
                     </div>
                     <div class="benefit-image">
-                        <div class="img-placeholder" style="background-image: url('assent/foto_9.png');"></div>
+                        <div class="img-placeholder" style="background-image: url('assets/photos/foto-9.png');"></div>
                     </div>
                 </div>
 
@@ -657,9 +647,9 @@
         <div class="footer-bottom">
             <div class="container footer-bottom-flex">
                 <div class="footer-links">
-                    <a href="privacidade.html">POLÍTICA DE USO E DE PRIVACIDADE DE DADOS</a>
+                    <a href="pages/privacidade.html">POLÍTICA DE USO E DE PRIVACIDADE DE DADOS</a>
                     <span class="separator">|</span>
-                    <a href="cookies.html">POLÍTICA DE COOKIES</a>
+                    <a href="pages/cookies.html">POLÍTICA DE COOKIES</a>
                 </div>
                 <p class="copyright">Copyright © 2026 Sportz. Todos os direitos reservados.</p>
             </div>
@@ -672,7 +662,7 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

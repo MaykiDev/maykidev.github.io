@@ -140,7 +140,7 @@ body {
     height: 600px;
     /* Altura fixa do bloco da imagem */
     margin: 0 auto;
-    background: linear-gradient(to right, rgba(0, 38, 58, 0.8) 20%, rgba(0, 38, 58, 0.2) 100%), url('assent/ginagio.png');
+    background: linear-gradient(to right, rgba(0, 38, 58, 0.8) 20%, rgba(0, 38, 58, 0.2) 100%), url('../assets/photos/ginasio.png');
     background-size: cover;
     background-position: center;
     border-radius: 40px;
@@ -272,20 +272,30 @@ body {
     background-color: var(--primary-bg);
 }
 
-.about-grid {
+.about-top {
     display: flex;
     gap: 60px;
     align-items: center;
+    margin-bottom: 60px;
 }
 
 .about-content {
-    flex: 1.2;
+    flex: 1.5;
+}
+
+.about-eyebrow {
+    display: block;
+    color: var(--accent-yellow);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
 }
 
 .about-cards {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -306,95 +316,76 @@ body {
 }
 
 /* Container de Números (Stats) */
-.stats-container {
+.stats-side {
+    flex: 1;
     display: flex;
+    flex-direction: column;
     gap: 30px;
+    padding-left: 40px;
+    border-left: 3px solid var(--accent-yellow);
 }
 
-.stat-item {
-    text-align: center;
-    max-width: 130px;
-}
-
-.stat-icon {
-    background-color: var(--accent-yellow);
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin: 0 auto 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease;
-}
-
-.stat-item:hover .stat-icon {
-    transform: scale(1.1);
-}
-
-.stat-icon img {
-    width: 30px;
-    height: auto;
-}
-
-.stat-info strong {
+.stat-item strong {
     display: block;
-    font-size: 16px;
-    font-weight: 800;
-    margin-bottom: 5px;
+    font-size: 44px;
+    font-weight: 900;
+    color: var(--accent-yellow);
+    line-height: 1;
+    margin-bottom: 8px;
 }
 
-.stat-info span {
-    font-size: 10px;
-    font-weight: 600;
+.stat-item span {
+    font-size: 12px;
+    font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 1px;
     color: var(--grey-text);
-    line-height: 1.2;
+    line-height: 1.3;
     display: block;
 }
 
-/* Cards de Diferenciais (Lado Direito) */
+/* Cards de Diferenciais (Linha Inferior) */
 .info-card {
-    background-color: var(--white-text);
-    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.04);
+    border-radius: 20px;
+    padding: 30px;
     display: flex;
-    overflow: hidden;
+    flex-direction: column;
     transition: transform 0.3s ease;
 }
 
 .info-card:hover {
-    transform: translateX(-10px);
+    transform: translateY(-8px);
 }
 
 .card-icon {
-    background-color: #d1d2d4;
-    /* Cinza claro para a área do ícone */
-    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.08);
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 100px;
 }
 
 .card-icon img {
-    width: 50px;
-}
-
-.card-text {
-    padding: 20px 25px;
-    color: var(--primary-bg);
+    width: 26px;
+    height: 26px;
 }
 
 .card-text h3 {
     font-size: 18px;
     font-weight: 900;
     margin-bottom: 10px;
+    color: var(--white-text);
 }
 
 .card-text p {
     font-size: 13px;
     line-height: 1.5;
     font-weight: 500;
+    color: var(--grey-text);
 }
 
 /* ==========================================================================
@@ -402,14 +393,11 @@ body {
    ========================================================================== */
 .tournaments {
     padding: 60px 0;
-    background-color: var(--primary-bg);
+    background-color: var(--white-text);
+    color: var(--primary-bg);
 }
 
 .carousel-container {
-    background-color: var(--white-text);
-    border-radius: 40px;
-    /* Bordas bem arredondadas conforme o layout */
-    padding: 50px;
     color: var(--primary-bg);
 }
 
@@ -598,7 +586,17 @@ body {
 .info-card-white {
     background-color: var(--white-text);
     padding: 50px;
-    justify-content: center;
+    grid-column: 1 / -1;
+    min-height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.package-info {
+    max-width: 600px;
 }
 
 .package-title {
@@ -613,7 +611,6 @@ body {
     color: var(--primary-bg);
     font-size: 16px;
     font-weight: 600;
-    margin-bottom: 40px;
     max-width: 280px;
 }
 
@@ -684,13 +681,11 @@ body {
    ========================================================================== */
 .gallery-section {
     padding: 60px 0;
-    background-color: var(--primary-bg);
+    background-color: var(--white-text);
+    color: var(--primary-bg);
 }
 
 .gallery-container {
-    background-color: var(--white-text);
-    border-radius: 40px;
-    padding: 50px;
     color: var(--primary-bg);
 }
 
@@ -1175,16 +1170,25 @@ body {
     transition: transform 0.3s ease;
 }
 
+.partner-logo {
+    cursor: pointer;
+}
+
 .partner-logo img {
     max-width: 100%;
     height: auto;
     object-fit: contain;
-    /* Filtro leve caso queira padronizar a intensidade das cores */
-    filter: grayscale(10%) contrast(110%);
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
 }
 
 .partner-logo:hover {
     transform: scale(1.1);
+}
+
+.partner-logo:hover img,
+.partner-logo.active img {
+    filter: grayscale(0%);
 }
 
 /* Ajuste para a última linha não ficar "esticada" e manter o alinhamento central */
@@ -1631,7 +1635,7 @@ body {
     }
 
     /* ---- ABOUT (SOBRE) ---- */
-    .about-grid {
+    .about-top {
         flex-direction: column;
         text-align: center;
     }
@@ -1640,8 +1644,14 @@ body {
         margin: 0 auto 40px;
     }
 
-    .stats-container {
-        justify-content: center;
+    .stats-side {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        border-left: none;
+        border-top: 3px solid var(--accent-yellow);
+        padding-left: 0;
+        padding-top: 30px;
     }
 
     .about-content {
@@ -1654,6 +1664,7 @@ body {
     }
 
     .info-card-white {
+        flex-direction: column;
         text-align: center;
         align-items: center;
     }
@@ -1876,11 +1887,6 @@ body {
         height: 350px;
     }
 
-    .carousel-container {
-        padding: 30px 20px;
-        border-radius: 25px;
-    }
-
     .carousel-title {
         font-size: 28px;
     }
@@ -1915,11 +1921,6 @@ body {
     }
 
     /* ---- GALERIA ---- */
-    .gallery-container {
-        padding: 30px 20px;
-        border-radius: 25px;
-    }
-
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 180px;
@@ -2134,22 +2135,13 @@ body {
         font-size: 22px;
     }
 
-    .stats-container {
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .stat-item {
-        flex: 1 1 40%;
+    .about-cards {
+        grid-template-columns: 1fr;
     }
 
     .info-card {
-        flex-direction: column;
         text-align: center;
-    }
-
-    .card-icon {
-        padding: 15px;
+        align-items: center;
     }
 
     .btn-more {
@@ -2249,21 +2241,12 @@ body {
         font-size: 14px;
     }
 
-    .stat-icon {
-        width: 50px;
-        height: 50px;
+    .stat-item strong {
+        font-size: 32px;
     }
 
-    .stat-icon img {
-        width: 24px;
-    }
-
-    .stat-info strong {
-        font-size: 14px;
-    }
-
-    .stat-info span {
-        font-size: 9px;
+    .stat-item span {
+        font-size: 10px;
     }
 
     .card-text h3 {
@@ -2277,11 +2260,6 @@ body {
     /* ---- CARROSSEL ---- */
     .tournaments {
         padding: 40px 0;
-    }
-
-    .carousel-container {
-        padding: 25px 15px;
-        border-radius: 20px;
     }
 
     .carousel-title {
@@ -2349,11 +2327,6 @@ body {
     /* ---- GALERIA ---- */
     .gallery-section {
         padding: 40px 0;
-    }
-
-    .gallery-container {
-        padding: 25px 15px;
-        border-radius: 20px;
     }
 
     .gallery-title {

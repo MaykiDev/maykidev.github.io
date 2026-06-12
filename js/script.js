@@ -202,6 +202,15 @@ if (whatsappForm) {
 }
 
 // ============================================================
+// LOGOS DE PARCEIROS - Colorir ao tocar (mobile/touch)
+// ============================================================
+document.querySelectorAll('.partner-logo').forEach(logo => {
+    logo.addEventListener('click', () => {
+        logo.classList.toggle('active');
+    });
+});
+
+// ============================================================
 // FAQ ACCORDION LOGIC
 // ============================================================
 const faqQuestions = document.querySelectorAll('.faq-question');
