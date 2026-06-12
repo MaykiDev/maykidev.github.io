@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneios - Sportz</title>
+    <meta name="description" content="Conheça os principais torneios de base do mundo que a Sportz pode levar você e sua equipe para disputar.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../index.html"><img src="../assets/logos/logo-sportz-branca.png" alt="Sportz Logo" class="logo-img"></a>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="../index.html#home">HOME</a></li>
+                <li><a href="torneios.html">TORNEIOS</a></li>
+                <li><a href="../index.html#galeria">GALERIA</a></li>
+                <li><a href="../index.html#treinadores">TREINADORES</a></li>
+                <li><a href="../index.html#quem-somos">QUEM SOMOS</a></li>
+                <li><a href="../index.html#contato">CONTATO</a></li>
+
+                <div class="social-icons-mobile">
+                    <a href="https://wa.me/551126797709" target="_blank" class="social-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://instagram.com/sportz.br" target="_blank" class="social-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:contato@sportz.com.br" class="social-btn" title="E-mail"><i class="far fa-envelope"></i></a>
+                    <a href="tel:+551126797709" class="social-btn" title="Telefone"><i class="fas fa-phone"></i></a>
+                </div>
+            </ul>
+
+            <div class="social-icons">
+                <a href="https://wa.me/551126797709" target="_blank" class="social-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://instagram.com/sportz.br" target="_blank" class="social-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:contato@sportz.com.br" class="social-btn" title="E-mail"><i class="far fa-envelope"></i></a>
+                <a href="tel:+551126797709" class="social-btn" title="Telefone"><i class="fas fa-phone"></i></a>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- CABEÇALHO DA PÁGINA -->
+        <section class="tournaments-page-header">
+            <div class="container">
+                <div class="breadcrumb"><a href="../index.html">Home</a> / Torneios</div>
+                <span class="about-eyebrow">TOP TORNEIOS SPORTZ</span>
+                <h1 class="page-title">TORNEIOS</h1>
+                <p class="section-desc">Conheça os principais torneios de base do mundo que a Sportz pode levar você
+                    e sua equipe para disputar.</p>
+            </div>
+        </section>
+
+        <!-- LISTAGEM DE TORNEIOS -->
+        <section class="tournaments-list-section">
+            <div class="container">
+
+                <div class="filter-buttons" id="filterButtons">
+                    <button class="filter-btn active" data-filter="todos">TODOS</button>
+                    <button class="filter-btn" data-filter="futebol">FUTEBOL</button>
+                    <button class="filter-btn" data-filter="handebol">HANDEBOL</button>
+                </div>
+
+                <div class="tournaments-grid" id="tournamentsGrid">
+                    <a href="torneios/gothia-cup.html" class="tournament-list-card" data-category="futebol">
+                        <div class="card-image">
+                            <span class="card-tag">FUTEBOL</span>
+                            <img src="../assets/photos/foto-1.png" alt="Gothia Cup">
+                        </div>
+                        <h3>GOTHIA CUP</h3>
+                    </a>
+
+                    <a href="torneios/helsinki-cup.html" class="tournament-list-card" data-category="futebol">
+                        <div class="card-image">
+                            <span class="card-tag">FUTEBOL</span>
+                            <img src="../assets/photos/foto-2.png" alt="Helsinki Cup">
+                        </div>
+                        <h3>HELSINKI CUP</h3>
+                    </a>
+
+                    <a href="torneios/partille-world-cup.html" class="tournament-list-card" data-category="handebol">
+                        <div class="card-image">
+                            <span class="card-tag">HANDEBOL</span>
+                            <img src="../assets/photos/foto-3.png" alt="Partille World Cup">
+                        </div>
+                        <h3>PARTILLE WORLD CUP</h3>
+                    </a>
+
+                    <a href="torneios/granollers-cup.html" class="tournament-list-card" data-category="handebol">
+                        <div class="card-image">
+                            <span class="card-tag">HANDEBOL</span>
+                            <img src="../assets/photos/foto-4.png" alt="Granollers Cup">
+                        </div>
+                        <h3>GRANOLLERS CUP</h3>
+                    </a>
+
+                    <a href="torneios/granollers-cup.html" class="tournament-list-card" data-category="handebol">
+                        <div class="card-image">
+                            <span class="card-tag">HANDEBOL</span>
+                            <img src="../assets/photos/foto-4.png" alt="Granollers Cup">
+                        </div>
+                        <h3>GRANOLLERS CUP</h3>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contato">
+        <div class="container footer-grid">
+
+            <div class="footer-contact">
+                <h2 class="footer-title">ENTRE EM CONTATO</h2>
+                <p class="footer-text">
+                    NOSSO EQUIPE ESTÁ PRONTA PARA TE ATENDER E APRESENTAR NOSSOS PACOTES, PARA QUE VOCÊ POSSA TER A
+                    MELHOR EXPERIÊNCIA POSSÍVEL.
+                </p>
+
+                <div class="contact-info">
+                    <a href="https://wa.me/551126797709" target="_blank" class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>+55 (11) 2679-7709</span>
+                    </a>
+                    <a href="https://instagram.com/sportz.br" target="_blank" class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <span>@SPORTZ.BR</span>
+                    </a>
+                    <a href="mailto:contato@sportz.com.br" class="contact-item">
+                        <i class="far fa-envelope"></i>
+                        <span>CONTATO@SPORTZ.COM.BR</span>
+                    </a>
+                    <a href="tel:+551126797709" class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+55 (11) 2679-7709</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-form-side">
+                <h2 class="footer-title">DÚVIDAS?</h2>
+                <form class="contact-form">
+                    <input type="text" placeholder="NOME" required>
+                    <input type="tel" placeholder="TELEFONE" required>
+                    <textarea placeholder="DESCREVA SUA DÚVIDA..." rows="6"></textarea>
+                    <button type="submit" class="btn-primary">ENVIAR AGORA</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <div class="footer-links">
+                    <a href="privacidade.html">POLÍTICA DE USO E DE PRIVACIDADE DE DADOS</a>
+                    <span class="separator">|</span>
+                    <a href="cookies.html">POLÍTICA DE COOKIES</a>
+                </div>
+                <p class="copyright">Copyright © 2026 Sportz. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Flutuante -->
+    <a href="https://wa.me/551126797709" target="_blank" class="whatsapp-float" title="Fale com a Sportz">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="../js/script.js"></script>
+    <script>
+        // Filtro de torneios por modalidade
+        const filterButtons = document.querySelectorAll('#filterButtons .filter-btn');
+        const tournamentCards = document.querySelectorAll('#tournamentsGrid .tournament-list-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filter = button.dataset.filter;
+
+                tournamentCards.forEach(card => {
+                    if (filter === 'todos' || card.dataset.category === filter) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
