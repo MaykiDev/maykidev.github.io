@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Torneios - Sportz</title>
-    <meta name="description" content="Conheça os principais torneios de base do mundo que a Sportz pode levar você e sua equipe para disputar.">
+    <title>Treinadores - Sportz</title>
+    <meta name="description" content="Seja um Manager Sportz: leve o seu time para o mundo e viva experiências internacionais únicas como treinador.">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -53,68 +53,109 @@
 
     <main>
         <!-- CABEÇALHO DA PÁGINA -->
-        <section class="tournaments-page-header">
+        <section class="treinadores-page-header" style="background-image: url('../assets/photos/foto-8.png');">
             <div class="container">
-                <div class="breadcrumb"><a href="../index.html">Home</a> / Torneios</div>
-                <span class="about-eyebrow">TOP TORNEIOS SPORTZ</span>
-                <h1 class="page-title">TORNEIOS</h1>
-                <p class="section-desc">Conheça os principais torneios de base do mundo que a Sportz pode levar você
-                    e sua equipe para disputar.</p>
+                <div class="breadcrumb"><a href="../index.html">Home</a> / Treinadores</div>
+                <span class="about-eyebrow">TREINADORES</span>
+                <h1 class="page-title">SEJA UM MANAGER<br>SPORTZ</h1>
+                <p class="section-desc">Transforme sua paixão pelo esporte em uma carreira internacional. Leve o seu
+                    time para o mundo e viva experiências únicas como <span class="text-yellow">treinador</span>
+                    Sportz.</p>
             </div>
         </section>
 
-        <!-- LISTAGEM DE TORNEIOS -->
-        <section class="tournaments-list-section">
+        <!-- O PROGRAMA -->
+        <section class="about-sportz">
+            <div class="container about-flex">
+
+                <div class="about-text-side">
+                    <span class="about-eyebrow">O PROGRAMA</span>
+                    <h2 class="about-title">LEVE O SEU TIME PARA O <span class="text-yellow">MUNDO</span> COM A
+                        SPORTZ</h2>
+                    <p class="about-description">
+                        O Programa Manager Sportz foi criado para treinadores e técnicos que querem ir além das
+                        quadras e campos do dia a dia. Você se torna o responsável por levar a sua equipe para
+                        disputar torneios internacionais, vivendo de perto toda a logística, a organização e a
+                        emoção de uma competição fora do Brasil. <br><br>
+                        Além de proporcionar uma experiência inesquecível para os seus atletas, ser um Manager Sportz
+                        é uma oportunidade única de crescimento profissional, ampliando sua rede de contatos e
+                        agregando valor ao seu currículo como treinador.
+                    </p>
+                </div>
+
+                <div class="about-image-side">
+                    <div class="image-container-frame">
+                        <img src="../assets/photos/foto-9.png" alt="Manager Sportz" class="about-img-frame">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 01-04 ETAPAS DO PROGRAMA -->
+        <section class="steps-section">
             <div class="container">
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <span class="step-number">01</span>
+                        <h3>MONTE O SEU TIME</h3>
+                        <p>Reúna a sua equipe e defina junto com a Sportz qual torneio internacional combina melhor
+                            com o perfil e o nível dos seus atletas.</p>
+                    </div>
 
-                <div class="filter-buttons" id="filterButtons">
-                    <button class="filter-btn active" data-filter="todos">TODOS</button>
-                    <button class="filter-btn" data-filter="futebol">FUTEBOL</button>
-                    <button class="filter-btn" data-filter="handebol">HANDEBOL</button>
+                    <div class="step-card">
+                        <span class="step-number">02</span>
+                        <h3>VIAJE JUNTO</h3>
+                        <p>Acompanhe o seu time durante toda a viagem, com a logística, hospedagem e traslados
+                            organizados pela Sportz do início ao fim.</p>
+                    </div>
+
+                    <div class="step-card">
+                        <span class="step-number">03</span>
+                        <h3>ALAVANQUE SUA CARREIRA</h3>
+                        <p>Ganhe experiência internacional, amplie sua rede de contatos no esporte e destaque-se
+                            como um treinador com vivência global.</p>
+                    </div>
+
+                    <div class="step-card">
+                        <span class="step-number">04</span>
+                        <h3>TRANSFORME VIDAS</h3>
+                        <p>Proporcione aos seus atletas uma experiência única de esporte, cultura e amizade que vai
+                            ficar marcada para sempre.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMO FUNCIONA / EM 4 PASSOS -->
+        <section class="how-it-works-section">
+            <div class="container">
+                <div class="how-it-works-header">
+                    <span class="about-eyebrow">COMO FUNCIONA</span>
+                    <h2 class="section-title">EM 4 PASSOS</h2>
                 </div>
 
-                <div class="tournaments-grid" id="tournamentsGrid">
-                    <a href="torneios/gothia-cup.html" class="tournament-list-card" data-category="futebol">
-                        <div class="card-image">
-                            <span class="card-tag">FUTEBOL</span>
-                            <img src="../assets/photos/foto-1.png" alt="Gothia Cup">
-                        </div>
-                        <h3>GOTHIA CUP</h3>
-                    </a>
+                <div class="how-it-works-grid">
+                    <div class="how-it-works-card">
+                        <div class="how-it-works-icon">1</div>
+                        <p>Entre em contato e conte sobre o seu time</p>
+                    </div>
 
-                    <a href="torneios/helsinki-cup.html" class="tournament-list-card" data-category="futebol">
-                        <div class="card-image">
-                            <span class="card-tag">FUTEBOL</span>
-                            <img src="../assets/photos/foto-2.png" alt="Helsinki Cup">
-                        </div>
-                        <h3>HELSINKI CUP</h3>
-                    </a>
+                    <div class="how-it-works-card">
+                        <div class="how-it-works-icon">2</div>
+                        <p>Montamos juntos o pacote ideal para a sua equipe</p>
+                    </div>
 
-                    <a href="torneios/partille-world-cup.html" class="tournament-list-card" data-category="handebol">
-                        <div class="card-image">
-                            <span class="card-tag">HANDEBOL</span>
-                            <img src="../assets/photos/foto-3.png" alt="Partille World Cup">
-                        </div>
-                        <h3>PARTILLE WORLD CUP</h3>
-                    </a>
+                    <div class="how-it-works-card">
+                        <div class="how-it-works-icon">3</div>
+                        <p>Cuidamos de toda a logística da viagem</p>
+                    </div>
 
-                    <a href="torneios/granollers-cup.html" class="tournament-list-card" data-category="handebol">
-                        <div class="card-image">
-                            <span class="card-tag">HANDEBOL</span>
-                            <img src="../assets/photos/foto-4.png" alt="Granollers Cup">
-                        </div>
-                        <h3>GRANOLLERS CUP</h3>
-                    </a>
-
-                    <a href="torneios/granollers-cup.html" class="tournament-list-card" data-category="handebol">
-                        <div class="card-image">
-                            <span class="card-tag">HANDEBOL</span>
-                            <img src="../assets/photos/foto-4.png" alt="Granollers Cup">
-                        </div>
-                        <h3>GRANOLLERS CUP</h3>
-                    </a>
+                    <div class="how-it-works-card">
+                        <div class="how-it-works-icon">4</div>
+                        <p>Você viaja e vive a experiência como um Manager Sportz</p>
+                    </div>
                 </div>
-
             </div>
         </section>
     </main>
@@ -179,28 +220,6 @@
     </a>
 
     <script src="../js/script.js"></script>
-    <script>
-        // Filtro de torneios por modalidade
-        const filterButtons = document.querySelectorAll('#filterButtons .filter-btn');
-        const tournamentCards = document.querySelectorAll('#tournamentsGrid .tournament-list-card');
-
-        filterButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                filterButtons.forEach(btn => btn.classList.remove('active'));
-                button.classList.add('active');
-
-                const filter = button.dataset.filter;
-
-                tournamentCards.forEach(card => {
-                    if (filter === 'todos' || card.dataset.category === filter) {
-                        card.classList.remove('hidden');
-                    } else {
-                        card.classList.add('hidden');
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 
 </html>

@@ -65,27 +65,29 @@ function updateCarousel() {
     track.style.transform = `translateX(-${index * cardWidth}px)`;
 }
 
-nextBtn.addEventListener('click', () => {
-    const totalCards = document.querySelectorAll('.tournament-card').length;
-    const cardsVisible = window.innerWidth > 1100 ? 4 : (window.innerWidth > 768 ? 2 : 1);
+if (track && nextBtn && prevBtn) {
+    nextBtn.addEventListener('click', () => {
+        const totalCards = document.querySelectorAll('.tournament-card').length;
+        const cardsVisible = window.innerWidth > 1100 ? 4 : (window.innerWidth > 768 ? 2 : 1);
 
-    if (index < totalCards - cardsVisible) {
-        index++;
-    } else {
-        index = 0; // Volta ao início (loop)
-    }
-    updateCarousel();
-});
+        if (index < totalCards - cardsVisible) {
+            index++;
+        } else {
+            index = 0; // Volta ao início (loop)
+        }
+        updateCarousel();
+    });
 
-prevBtn.addEventListener('click', () => {
-    if (index > 0) {
-        index--;
-    }
-    updateCarousel();
-});
+    prevBtn.addEventListener('click', () => {
+        if (index > 0) {
+            index--;
+        }
+        updateCarousel();
+    });
 
-// Ajusta o carrossel caso o usuário mude o tamanho da tela (resize)
-window.addEventListener('resize', updateCarousel);
+    // Ajusta o carrossel caso o usuário mude o tamanho da tela (resize)
+    window.addEventListener('resize', updateCarousel);
+}
 
 // ============================================================
 // GALERIA - Lightbox

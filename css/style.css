@@ -1572,6 +1572,7 @@ body {
         top: 0;
         width: 100%;
         height: 100vh;
+        height: 100dvh;
         background-color: var(--primary-bg);
         flex-direction: column;
         justify-content: center;
@@ -1724,6 +1725,25 @@ body {
         height: 300px;
     }
 
+    /* ---- QUEM SOMOS ---- */
+    .story-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .story-stats-grid {
+        text-align: left;
+    }
+
+    /* ---- CONTATO ---- */
+    .contact-page-flex {
+        flex-direction: column;
+    }
+
+    .contact-page-form-side {
+        width: 100%;
+    }
+
     .benefit-row,
     .benefit-row.reverse {
         flex-direction: column;
@@ -1744,6 +1764,10 @@ body {
 
     .img-placeholder {
         height: 250px;
+    }
+
+    .package-tournament-tags {
+        justify-content: center;
     }
 
     .footer-grid {
@@ -1790,24 +1814,6 @@ body {
 
     .footer-title {
         font-size: 30px;
-    }
-
-    /* ---- TORNEIO PAGES ---- */
-    .tournament-content-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .tournament-page-hero {
-        height: 300px;
-        border-radius: 25px;
-    }
-
-    .tournament-page-title h1 {
-        font-size: 36px;
-    }
-
-    .tournament-page-title p {
-        font-size: 16px;
     }
 }
 
@@ -1900,20 +1906,6 @@ body {
     .btn-more {
         width: 100%;
         text-align: center;
-    }
-
-    /* ---- PÁGINA TORNEIOS (LISTAGEM) ---- */
-    .page-title {
-        font-size: 36px;
-    }
-
-    .tournaments-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-
-    .tournament-list-card .card-image {
-        height: 220px;
     }
 
     /* ---- PACOTES ---- */
@@ -2071,38 +2063,6 @@ body {
 
     .footer-bottom {
         margin-top: 50px;
-    }
-
-    /* ---- TORNEIO PAGES ---- */
-    .tournament-page-hero {
-        height: 250px;
-        width: 92%;
-        border-radius: 20px;
-        margin-bottom: 30px;
-    }
-
-    .tournament-page-title h1 {
-        font-size: 28px;
-    }
-
-    .tournament-page-title p {
-        font-size: 14px;
-    }
-
-    .tournament-info-box {
-        padding: 25px;
-    }
-
-    .tournament-text-content h2 {
-        font-size: 24px;
-    }
-
-    .tournament-text-content h3 {
-        font-size: 20px;
-    }
-
-    .tournament-text-content p {
-        font-size: 14px;
     }
 
     /* ---- WHATSAPP FLOAT ---- */
@@ -2362,20 +2322,8 @@ body {
     }
 
     /* ---- PÁGINA TORNEIOS (LISTAGEM) ---- */
-    .page-title {
-        font-size: 30px;
-    }
-
-    .tournaments-grid {
-        grid-template-columns: 1fr;
-    }
-
     .filter-buttons {
         flex-wrap: wrap;
-    }
-
-    .filter-btn {
-        padding: 10px 22px;
     }
 
     /* ---- QUEM SOMOS ---- */
@@ -2586,49 +2534,6 @@ body {
 
     .copyright {
         font-size: 10px;
-    }
-
-    /* ---- TORNEIO PAGES ---- */
-    .tournament-page-hero {
-        height: 200px;
-        width: 92%;
-        border-radius: 15px;
-        margin-bottom: 25px;
-    }
-
-    .tournament-page-title h1 {
-        font-size: 22px;
-    }
-
-    .tournament-page-title p {
-        font-size: 13px;
-    }
-
-    .tournament-info-box {
-        padding: 20px;
-        border-radius: 15px;
-    }
-
-    .tournament-info-box h3 {
-        font-size: 18px;
-    }
-
-    .tournament-text-content h2 {
-        font-size: 20px;
-    }
-
-    .tournament-text-content h3 {
-        font-size: 18px;
-        margin-top: 25px;
-    }
-
-    .tournament-text-content p {
-        font-size: 13px;
-        line-height: 1.6;
-    }
-
-    .tournament-text-content ul li {
-        font-size: 13px;
     }
 
     /* ---- PRIVACY / COOKIES PAGES ---- */
@@ -2972,5 +2877,699 @@ body {
 
 .tournament-list-card.hidden {
     display: none;
+}
+
+/* ==========================================================================
+   PÁGINA PACOTES
+   ========================================================================== */
+.package-image-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.package-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+    background-color: var(--accent-yellow);
+    color: var(--primary-bg);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.package-tournaments {
+    margin: 20px 0 25px;
+}
+
+.package-tournaments-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--primary-bg);
+    opacity: 0.6;
+    margin-bottom: 10px;
+}
+
+.package-tournament-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.package-tournament-tag {
+    padding: 8px 18px;
+    border: 2px solid var(--primary-bg);
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--primary-bg);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+a.package-tournament-tag:hover {
+    background-color: var(--primary-bg);
+    color: #fff;
+}
+
+span.package-tournament-tag {
+    border-style: dashed;
+    opacity: 0.6;
+    cursor: default;
+}
+
+/* ==========================================================================
+   PÁGINA GALERIA
+   ========================================================================== */
+.gallery-page-section {
+    background-color: var(--primary-bg);
+    padding: 50px 0 80px;
+}
+
+.gallery-page-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 280px;
+}
+
+/* ==========================================================================
+   PÁGINA TREINADORES
+   ========================================================================== */
+.treinadores-page-header {
+    position: relative;
+    padding: 50px 0 70px;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--primary-bg);
+    overflow: hidden;
+}
+
+.treinadores-page-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0, 38, 58, 0.92) 0%, rgba(0, 38, 58, 0.75) 100%);
+}
+
+.treinadores-page-header .container {
+    position: relative;
+    z-index: 1;
+}
+
+.steps-section {
+    padding: 0 0 80px;
+    background-color: var(--primary-bg);
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.step-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    transition: all 0.4s ease;
+}
+
+.step-card:hover {
+    background: rgba(251, 175, 25, 0.1);
+    border-color: rgba(251, 175, 25, 0.3);
+    transform: translateY(-5px);
+}
+
+.step-number {
+    display: block;
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--accent-yellow);
+    margin-bottom: 15px;
+}
+
+.step-card h3 {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--white-text);
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+.step-card p {
+    font-size: 13px;
+    color: var(--grey-text);
+    line-height: 1.6;
+}
+
+.how-it-works-section {
+    background-color: var(--white-text);
+    color: var(--primary-bg);
+    padding: 80px 0;
+}
+
+.how-it-works-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.how-it-works-header .section-title {
+    color: var(--primary-bg);
+    margin-bottom: 0;
+}
+
+.how-it-works-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.how-it-works-card {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 35px 25px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.how-it-works-icon {
+    width: 55px;
+    height: 55px;
+    background: linear-gradient(180deg, var(--accent-yellow) 0%, var(--btn-grad-start) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--primary-bg);
+}
+
+.how-it-works-card p {
+    font-size: 14px;
+    color: var(--primary-bg);
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+/* ==========================================================================
+   PÁGINA QUEM SOMOS
+   ========================================================================== */
+.story-section {
+    padding: 80px 0;
+    background-color: var(--primary-bg);
+}
+
+.story-flex {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.story-image-side {
+    flex: 1;
+}
+
+.story-image-frame {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.story-image-frame img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+}
+
+.story-badge-top {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    background-color: #e63946;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.story-image-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+    background: linear-gradient(180deg, rgba(0, 38, 58, 0) 30%, rgba(0, 38, 58, 0.85) 100%);
+}
+
+.story-image-overlay h3 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.story-badge-bottom {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+    background: linear-gradient(180deg, var(--accent-yellow) 0%, var(--btn-grad-start) 100%);
+    color: var(--primary-bg);
+    padding: 12px 22px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.story-badge-bottom strong {
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.story-badge-bottom span {
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.story-text-side {
+    flex: 1;
+}
+
+.story-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 40px;
+    margin-top: 30px;
+}
+
+.timeline-section {
+    background-color: var(--white-text);
+    color: var(--primary-bg);
+    padding: 80px 0;
+}
+
+.timeline-header {
+    margin-bottom: 40px;
+}
+
+.timeline-header .section-title {
+    color: var(--primary-bg);
+    margin-bottom: 0;
+}
+
+.timeline-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 30px;
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(0, 38, 58, 0.1);
+}
+
+.timeline-item:last-child {
+    border-bottom: none;
+}
+
+.timeline-year {
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--accent-yellow);
+}
+
+.timeline-content h3 {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--primary-bg);
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.timeline-content p {
+    font-size: 14px;
+    color: var(--primary-bg);
+    opacity: 0.7;
+    line-height: 1.6;
+}
+
+.partners-page-section {
+    background-color: var(--white-text);
+    padding: 80px 0;
+}
+
+.partners-page-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.partners-page-header .section-title {
+    color: var(--primary-bg);
+}
+
+.partners-page-header .section-desc {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.partners-page-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.partner-card {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    min-height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.partner-card:hover {
+    transform: translateY(-5px);
+}
+
+.partner-card img {
+    max-width: 100%;
+    max-height: 60px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.partner-card:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* ==========================================================================
+   PÁGINA CONTATO
+   ========================================================================== */
+.contact-page-section {
+    padding: 80px 0;
+    background-color: var(--primary-bg);
+}
+
+.contact-page-flex {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.contact-page-info {
+    flex: 1;
+}
+
+.contact-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.contact-card {
+    display: block;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 25px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.contact-card:hover {
+    background: rgba(251, 175, 25, 0.1);
+    border-color: rgba(251, 175, 25, 0.3);
+    transform: translateY(-5px);
+}
+
+.contact-card-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(180deg, var(--accent-yellow) 0%, var(--btn-grad-start) 100%);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.contact-card-icon i {
+    font-size: 22px;
+    color: var(--primary-bg);
+}
+
+.contact-card h3 {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--white-text);
+    margin-bottom: 6px;
+}
+
+.contact-card p {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--grey-text);
+}
+
+.contact-page-form-side {
+    flex: 1;
+}
+
+.contact-form-card {
+    background: linear-gradient(135deg, rgba(0, 38, 58, 0.95) 0%, rgba(0, 50, 78, 0.95) 100%);
+    border: 1px solid rgba(251, 175, 25, 0.2);
+    border-radius: 30px;
+    padding: 40px;
+}
+
+.contact-form-card h2 {
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--white-text);
+    margin-bottom: 10px;
+}
+
+.contact-form-card p {
+    font-size: 14px;
+    color: var(--grey-text);
+    margin-bottom: 25px;
+}
+
+.contact-hours-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.contact-hours-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-hours-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.contact-hours-list li span {
+    font-size: 14px;
+    color: var(--white-text);
+    font-weight: 700;
+}
+
+.contact-hours-list li strong {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--accent-yellow);
+}
+
+/* ==========================================================================
+   RESPONSIVO - AJUSTES DE CASCATA (GRIDS E PÁGINAS DE TORNEIO)
+   As regras abaixo precisam vir depois das declarações base das seções
+   acima para vencer no empate de especificidade do CSS.
+   ========================================================================== */
+@media (max-width: 992px) {
+    .tournament-content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tournament-page-hero {
+        height: 300px;
+        border-radius: 25px;
+    }
+
+    .tournament-page-title h1 {
+        font-size: 36px;
+    }
+
+    .tournament-page-title p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 36px;
+    }
+
+    .tournaments-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .tournament-list-card .card-image {
+        height: 220px;
+    }
+
+    .gallery-page-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 220px;
+    }
+
+    .steps-grid,
+    .how-it-works-grid,
+    .partners-page-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .timeline-item {
+        grid-template-columns: 100px 1fr;
+        gap: 15px;
+    }
+
+    .tournament-page-hero {
+        height: 250px;
+        width: 92%;
+        border-radius: 20px;
+        margin-bottom: 30px;
+    }
+
+    .tournament-page-title h1 {
+        font-size: 28px;
+    }
+
+    .tournament-page-title p {
+        font-size: 14px;
+    }
+
+    .tournament-info-box {
+        padding: 25px;
+    }
+
+    .tournament-text-content h2 {
+        font-size: 24px;
+    }
+
+    .tournament-text-content h3 {
+        font-size: 20px;
+    }
+
+    .tournament-text-content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 30px;
+    }
+
+    .tournaments-grid,
+    .gallery-page-grid,
+    .steps-grid,
+    .how-it-works-grid,
+    .partners-page-grid,
+    .story-stats-grid,
+    .contact-cards-grid,
+    .timeline-item {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline-item {
+        gap: 10px;
+    }
+
+    .filter-btn {
+        padding: 10px 22px;
+    }
+
+    .contact-form-card {
+        padding: 30px 20px;
+    }
+
+    .tournament-page-hero {
+        height: 200px;
+        width: 92%;
+        border-radius: 15px;
+        margin-bottom: 25px;
+    }
+
+    .tournament-page-title h1 {
+        font-size: 22px;
+    }
+
+    .tournament-page-title p {
+        font-size: 13px;
+    }
+
+    .tournament-info-box {
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .tournament-info-box h3 {
+        font-size: 18px;
+    }
+
+    .tournament-text-content h2 {
+        font-size: 20px;
+    }
+
+    .tournament-text-content h3 {
+        font-size: 18px;
+        margin-top: 25px;
+    }
+
+    .tournament-text-content p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .tournament-text-content ul li {
+        font-size: 13px;
+    }
 }
 
