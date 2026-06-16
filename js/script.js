@@ -52,6 +52,90 @@ window.addEventListener('scroll', () => {
 });
 
 // ============================================================
+// CARROSSEL HERO (DESTAQUES)
+// ============================================================
+const heroSlides = document.querySelectorAll('.hero-slide');
+const heroDots = document.querySelectorAll('.hero-dot');
+const heroPrevBtn = document.querySelector('#heroPrevBtn');
+const heroNextBtn = document.querySelector('#heroNextBtn');
+const heroContainer = document.querySelector('.hero .container');
+
+let heroIndex = 0;
+let heroTimer = null;
+const heroIntervalTime = 5000; // 5 segundos
+
+function showHeroSlide(n) {
+    if (heroSlides.length === 0) return;
+    
+    // Remove active das classes anteriores
+    heroSlides.forEach(slide => slide.classList.remove('active'));
+    heroDots.forEach(dot => dot.classList.remove('active'));
+    
+    // Calcula o index correto
+    heroIndex = (n + heroSlides.length) % heroSlides.length;
+    
+    // Ativa o novo slide e dot
+    heroSlides[heroIndex].classList.add('active');
+    if (heroDots[heroIndex]) {
+        heroDots[heroIndex].classList.add('active');
+    }
+}
+
+function nextHeroSlide() {
+    showHeroSlide(heroIndex + 1);
+}
+
+function prevHeroSlide() {
+    showHeroSlide(heroIndex - 1);
+}
+
+function startHeroAutoplay() {
+    stopHeroAutoplay();
+    heroTimer = setInterval(nextHeroSlide, heroIntervalTime);
+}
+
+function stopHeroAutoplay() {
+    if (heroTimer) {
+        clearInterval(heroTimer);
+        heroTimer = null;
+    }
+}
+
+if (heroSlides.length > 0) {
+    // Eventos dos botões
+    if (heroNextBtn) {
+        heroNextBtn.addEventListener('click', () => {
+            nextHeroSlide();
+            startHeroAutoplay(); // Reinicia o timer para evitar troca rápida logo após o clique
+        });
+    }
+    
+    if (heroPrevBtn) {
+        heroPrevBtn.addEventListener('click', () => {
+            prevHeroSlide();
+            startHeroAutoplay(); // Reinicia o timer
+        });
+    }
+    
+    // Eventos dos dots
+    heroDots.forEach((dot, idx) => {
+        dot.addEventListener('click', () => {
+            showHeroSlide(idx);
+            startHeroAutoplay(); // Reinicia o timer
+        });
+    });
+    
+    // Inicia autoplay
+    startHeroAutoplay();
+    
+    // Pausa no Hover
+    if (heroContainer) {
+        heroContainer.addEventListener('mouseenter', stopHeroAutoplay);
+        heroContainer.addEventListener('mouseleave', startHeroAutoplay);
+    }
+}
+
+// ============================================================
 // CARROSSEL DE TORNEIOS
 // ============================================================
 const track = document.querySelector('#carouselTrack');

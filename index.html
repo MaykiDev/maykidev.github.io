@@ -53,17 +53,59 @@
 
     <main class="hero">
         <div class="container">
-            <div class="hero-content">
-                <img src="assets/logos/logo-sportz-branca.png" alt="Sportz" class="hero-logo">
-
-                <p class="hero-text">
-                    A SPORTZ É A ÚNICA QUE LEVA VOCÊ E SUA EQUIPE PARA OS MAIORES TORNEIOS DE BASE DO MUNDO!
-                </p>
-
-                <div class="hero-btns">
-                    <a href="#contato" class="btn btn-primary">ENTRE EM CONTATO</a>
-                    <a href="#torneios" class="btn btn-outline">TORNEIOS</a>
+            <div class="hero-slider">
+                <!-- Slide 1 -->
+                <div class="hero-slide active" style="background-image: linear-gradient(to right, rgba(0, 38, 58, 0.8) 20%, rgba(0, 38, 58, 0.2) 100%), url('assets/photos/hero-1.png');">
+                    <div class="hero-content">
+                        <img src="assets/logos/logo-sportz-branca.png" alt="Sportz" class="hero-logo">
+                        <p class="hero-text">
+                            A SPORTZ É A ÚNICA QUE LEVA VOCÊ E SUA EQUIPE PARA OS MAIORES TORNEIOS DE BASE DO MUNDO!
+                        </p>
+                        <div class="hero-btns">
+                            <a href="#contato" class="btn btn-primary">ENTRE EM CONTATO</a>
+                            <a href="#torneios" class="btn btn-outline">TORNEIOS</a>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Slide 2 -->
+                <div class="hero-slide" style="background-image: linear-gradient(to right, rgba(0, 38, 58, 0.8) 20%, rgba(0, 38, 58, 0.2) 100%), url('assets/photos/hero-2.png');">
+                    <div class="hero-content">
+                        <img src="assets/logos/logo-sportz-branca.png" alt="Sportz" class="hero-logo">
+                        <p class="hero-text">
+                            VIVENCIE O MAIOR TORNEIO DE HANDEBOL DO MUNDO EM GOTEMBURGO COM A SPORTZ!
+                        </p>
+                        <div class="hero-btns">
+                            <a href="#contato" class="btn btn-primary">ENTRE EM CONTATO</a>
+                            <a href="#torneios" class="btn btn-outline">TORNEIOS</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="hero-slide" style="background-image: linear-gradient(to right, rgba(0, 38, 58, 0.8) 20%, rgba(0, 38, 58, 0.2) 100%), url('assets/photos/hero-3.png');">
+                    <div class="hero-content">
+                        <img src="assets/logos/logo-sportz-branca.png" alt="Sportz" class="hero-logo">
+                        <p class="hero-text">
+                            LEVE SUA EQUIPE PARA DISPUTAR OS MAIORES TORNEIOS JUVENIS NOS ESTADOS UNIDOS!
+                        </p>
+                        <div class="hero-btns">
+                            <a href="#contato" class="btn btn-primary">ENTRE EM CONTATO</a>
+                            <a href="#torneios" class="btn btn-outline">TORNEIOS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles de Navegação -->
+            <button class="hero-nav-btn prev" id="heroPrevBtn" aria-label="Slide anterior"><i class="fas fa-chevron-left"></i></button>
+            <button class="hero-nav-btn next" id="heroNextBtn" aria-label="Próximo slide"><i class="fas fa-chevron-right"></i></button>
+
+            <!-- Dots Indicadores -->
+            <div class="hero-dots" id="heroDots">
+                <span class="hero-dot active" data-slide="0"></span>
+                <span class="hero-dot" data-slide="1"></span>
+                <span class="hero-dot" data-slide="2"></span>
             </div>
         </div>
     </main>
