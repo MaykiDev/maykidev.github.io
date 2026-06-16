@@ -7,7 +7,7 @@
     <title>Torneios - Sportz</title>
     <meta name="description" content="Conheça os principais torneios de base do mundo que a Sportz pode levar você e sua equipe para disputar.">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
@@ -105,6 +105,14 @@
                         </div>
                         <h3>GRANOLLERS CUP</h3>
                     </a>
+
+                    <a href="torneios/paris-world-games.html" class="tournament-list-card" data-category="futebol handebol">
+                        <div class="card-image">
+                            <span class="card-tag">FUTEBOL | HANDEBOL</span>
+                            <img src="../assets/photos/PARIS WORLD GAMES - PRINCIPAIS TORNEIOS.jpeg" alt="Paris World Games 2026">
+                        </div>
+                        <h3>PARIS WORLD GAMES 2026</h3>
+                    </a>
             </div>
         </section>
     </main>
@@ -182,7 +190,8 @@
                 const filter = button.dataset.filter;
 
                 tournamentCards.forEach(card => {
-                    if (filter === 'todos' || card.dataset.category === filter) {
+                    const categories = card.dataset.category.split(' ');
+                    if (filter === 'todos' || categories.includes(filter)) {
                         card.classList.remove('hidden');
                     } else {
                         card.classList.add('hidden');
