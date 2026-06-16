@@ -133,6 +133,27 @@ if (heroSlides.length > 0) {
         heroContainer.addEventListener('mouseenter', stopHeroAutoplay);
         heroContainer.addEventListener('mouseleave', startHeroAutoplay);
     }
+
+    // Swipe touch para o hero
+    if (heroContainer) {
+        let heroTouchStartX = 0;
+
+        heroContainer.addEventListener('touchstart', e => {
+            heroTouchStartX = e.changedTouches[0].clientX;
+        }, { passive: true });
+
+        heroContainer.addEventListener('touchend', e => {
+            const diff = heroTouchStartX - e.changedTouches[0].clientX;
+            if (Math.abs(diff) > 50) {
+                if (diff > 0) {
+                    nextHeroSlide();
+                } else {
+                    prevHeroSlide();
+                }
+                startHeroAutoplay();
+            }
+        }, { passive: true });
+    }
 }
 
 // ============================================================
@@ -171,6 +192,38 @@ if (track && nextBtn && prevBtn) {
 
     // Ajusta o carrossel caso o usuário mude o tamanho da tela (resize)
     window.addEventListener('resize', updateCarousel);
+
+    // Swipe touch para o carrossel de torneios
+    const trackContainer = document.querySelector('.carousel-track-container');
+    if (trackContainer) {
+        let touchStartX = 0;
+
+        trackContainer.addEventListener('touchstart', e => {
+            touchStartX = e.changedTouches[0].clientX;
+        }, { passive: true });
+
+        trackContainer.addEventListener('touchend', e => {
+            const diff = touchStartX - e.changedTouches[0].clientX;
+            if (Math.abs(diff) > 50) {
+                const totalCards = document.querySelectorAll('.tournament-card').length;
+                const cardsVisible = window.innerWidth > 1100 ? 4 : (window.innerWidth > 768 ? 2 : 1);
+                if (diff > 0) {
+                    if (index < totalCards - cardsVisible) {
+                        index++;
+                    } else {
+                        index = 0;
+                    }
+                } else {
+                    if (index > 0) {
+                        index--;
+                    } else {
+                        index = totalCards - cardsVisible;
+                    }
+                }
+                updateCarousel();
+            }
+        }, { passive: true });
+    }
 }
 
 // ============================================================

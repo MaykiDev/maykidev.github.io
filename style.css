@@ -1981,9 +1981,7 @@ body {
     }
 
     .hero .container {
-        height: auto;
-        min-height: 400px;
-        padding: 40px 25px;
+        height: 520px;
         border-radius: 25px;
     }
 
@@ -2329,8 +2327,7 @@ body {
 
     /* ---- HERO ---- */
     .hero .container {
-        min-height: 320px;
-        padding: 30px 18px;
+        height: 460px;
         border-radius: 20px;
         width: 92%;
     }
@@ -2705,8 +2702,7 @@ body {
 @media (max-width: 360px) {
 
     .hero .container {
-        min-height: 280px;
-        padding: 25px 15px;
+        height: 400px;
     }
 
     .hero-logo {
